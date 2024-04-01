@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/sfondo-1.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(157, 76, 76);
+  transition: 0.3s;
+}
+
+button {
+  border: none;
+  background: rgb(157, 76, 76);
+  padding: 12px 30px;
+  border-radius: 50px;
+  color: rgb(226, 212, 212);
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+main {
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/sfondo\ mid.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.web-title {
+  position: absolute;
+  top: 14rem;
+  right: 0rem;
+  width: 700px;
+  height: 400px;
+}
+
+h3.title {
+  color: white;
+  padding-left: 2rem;
+  font-size: 5rem;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+h3.title1 {
+  color: white;
+  padding-left: 23rem;
+  font-size: 3rem;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+h3.title2 {
+  color: white;
+  padding-left: 8rem;
+  font-size: 5rem;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+}
+.span1 {
+  color: rgb(157, 76, 76);
+}
+.span2 {
+  color: rgb(136, 42, 42);
+}
+
+.main>h2 {
+  color: crimson;
+  text-align: center;
+  font-family: "Noto Serif Display", serif;
+  font-size: 3rem;
+  padding-top: 7rem;
+}
+
+.work-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20rem;
+  gap: 5rem;
+  text-align: center;
+}
+
+.work-container h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.work-container h3 a:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+img {
+  width: 12rem;
+  margin-top:-6rem;
+}
+
+footer {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/sfondo\ footer.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15rem;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.footer-container p {
+  color: rgb(56, 140, 56);
+}
+
+.footer-container h5 {
+  color: rgb(56, 140, 56);
+  padding-top: 1.2rem;
+}
+
+.footer-container > h5 > span {
+  font-size: 0.7rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 610px) and (max-width: 768px) {
+  .web-title {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 2rem;
+  }
+  h3.title,
+  h3.title1,
+  h3.title2 {
+    font-size: 4.3rem;
+    left: 0rem;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./assets/sfondo\ mid.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  .work-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-top: 10rem;
+    padding-left: 20%;
+    gap: 3rem;
+    text-align: center;
+  }
+  footer h5,
+  footer p {
+    font-size: 2rem;
+  }
+  .footer-container > h5 > span {
+    font-size: 1.3rem;
+  }
+  img{
+    width: 10rem;
+  }
+}
+
+@media (max-width: 610px) {
+  main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./assets/sfondo\ midtablet.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  .web-title {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 2rem;
+  }
+  h3.title,
+  h3.title1,
+  h3.title2 {
+    font-size: 4.3rem;
+    left: 0rem;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-top: 6rem;
+    padding-left: 20%;
+    gap: 3rem;
+    text-align: center;
+  }
+  img {
+    width: 5rem;
+  }
+  footer h5,
+  footer p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 455px) {
+  main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./assets/sfondo\ midtablet.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  .web-title {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 2rem;
+  }
+  h3.title,
+  h3.title1,
+  h3.title2 {
+    font-size: 3rem;
+    left: 0rem;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-top: 6rem;
+    padding-left: 20%;
+    gap: 3rem;
+    text-align: center;
+  }
+  img {
+    width: 5rem;
+  }
+  footer h5,
+  footer p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
